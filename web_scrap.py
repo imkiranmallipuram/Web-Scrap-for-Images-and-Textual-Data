@@ -8,7 +8,7 @@ class Main:
 
     @property
     def web(self):
-        site = 'https://www.bhaskar.com/' # Website which we want to scrap
+        site = 'Website Url' # Website which we want to scrap
         response = requests.get(site) # User requests to the particular site
         soup = BeautifulSoup(response.text, 'html.parser') # Scrap the data from url
         img_tags = soup.find_all('img')
